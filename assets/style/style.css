@@ -287,8 +287,8 @@ a > h1:hover{
         ;
     }
 
-    .one > p{transform:translate(calc(80px - 30.78px),-100%);}
-    .two > p{transform:translate(calc(80px - 30.78px),-100%);}
+    .one > p{transform:translate(calc(80px - 30.78px),-45.78px);}
+    .two > p{transform:translate(calc(80px - 30.78px),-45.78px);}
 
     .container-country-flag{
         width: 160px;
