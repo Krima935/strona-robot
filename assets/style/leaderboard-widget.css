@@ -1,0 +1,94 @@
+.leaderboard{
+    display: grid; 
+    grid-auto-columns: 1fr; 
+    grid-template-columns: 1fr 1fr 1fr; 
+    grid-template-rows: .1fr 1fr; 
+    gap: 0px 0px; 
+    grid-template-areas: 
+    " 🔴 🟡 🔵"
+    " 🟥 🟨 🟦"; 
+}
+
+.column1          {grid-area: 🔴;}
+.column1-container{grid-area: 🟥;}
+
+.column2          {grid-area: 🟡;}
+.column2-container{grid-area: 🟨;}
+
+.column3          {grid-area: 🔵;}
+.column3-container{grid-area: 🟦;}
+
+.column1-container,.column2-container,.column3-container{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+    align-content: center;
+}
+
+.title{
+    font-size: 3rem;
+    font-weight: bold;
+    align-self: center;
+    justify-self: center;
+}
+
+
+/* widget 
+
+.widget-leaderboard > *{width: 100%;height: 100%;}
+*/
+
+.widget-leaderboard>*{
+    display: flex;
+    justify-self:  center;
+    align-self:    center;
+    position: relative;
+}
+
+.widget-leaderboard{
+    width: 220px;
+    height: 66px;
+    border-radius: 5px;
+    background-color: var(--c5);
+    display: grid; 
+    grid-template-columns: 1fr .5fr .5fr; 
+    grid-template-rows: 1fr 1fr; 
+    grid-template-areas: 
+    "⚪ sru su"
+    "🟠 srd sd"; 
+}
+
+.pointer-1{grid-area: ⚪;}.score1-leaderboard-up        {grid-area: sru;} .score2-leaderboard-up        {grid-area: su;}
+.pointer-2{grid-area: 🟠;}.score1-leaderboard-down      {grid-area: srd;} .score2-leaderboard-down      {grid-area: sd;}
+
+
+.score2-leaderboard-up::before{ background: #e23838 !important; }
+.score2-leaderboard-up::before, 
+.score1-leaderboard-up::before  {
+    content: "";
+    position: absolute;  
+    width: calc( 9.10001px * 6 );
+    height: 2px;
+    background: #5edb3e;
+    top: -7px;
+    transform: translateX(calc(-50% + (9.10001px / 2)));
+}
+
+
+.country-leaderbord{
+    left: 20px;
+}
+.country-leaderbord::before{
+    content: "";
+    position: absolute;
+    top: calc(50% - .5em);
+    left: -25px;
+    background-image: var(--img);
+    background-repeat: no-repeat;
+    background-position: center;
+    border-radius: 5px;
+    width: 20px;
+    height: 1em;
+    display: block;
+}

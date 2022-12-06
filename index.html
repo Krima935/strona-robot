@@ -46,17 +46,84 @@
                 </article>
                 <article class="leaderboard-content">
                     <div class="leaderboard">
-                        <div class="tit2">
-                            <h2>Ćwierćfinał</h2>
+                        <header class="title column1">Ćwierćfinał</header>
+                        <header class="title column2">Półfinał</header>
+                        <header class="title column3">Finał</header>
+                        <div class="column1-container">
+                            <div class="widget-leaderboard">
+                                <p class="country-leaderbord pointer-1" style="--img:url('https://upload.wikimedia.org/wikipedia/commons/b/b0/No_flag.svg')">country1</p>
+                                <p class="country-leaderbord pointer-2" style="--img:url('https://upload.wikimedia.org/wikipedia/commons/b/b0/No_flag.svg')">country2</p>
+                                <div class="score1-leaderboard-up">1</div>
+                                <div class="score1-leaderboard-down">3</div>
+                                <div class="score2-leaderboard-up">2</div>
+                                <div class="score2-leaderboard-down">4</div>
+                            </div>
+                            <div class="widget-leaderboard">
+                                <p class="country-leaderbord pointer-1" style="--img:url('https://upload.wikimedia.org/wikipedia/commons/b/b0/No_flag.svg')">country1</p>
+                                <p class="country-leaderbord pointer-2" style="--img:url('https://upload.wikimedia.org/wikipedia/commons/b/b0/No_flag.svg')">country2</p>
+                                <div class="score1-leaderboard-up">0</div>
+                                <div class="score2-leaderboard-up">0</div>
+                                <div class="score1-leaderboard-down">0</div>
+                                <div class="score2-leaderboard-down">0</div>
+                            </div>
+                            <div class="widget-leaderboard">
+                                <p class="country-leaderbord pointer-1" style="--img:url('https://upload.wikimedia.org/wikipedia/commons/b/b0/No_flag.svg')">country1</p>
+                                <p class="country-leaderbord pointer-2" style="--img:url('https://upload.wikimedia.org/wikipedia/commons/b/b0/No_flag.svg')">country2</p>
+                                <div class="score1-leaderboard-up">0</div>
+                                <div class="score2-leaderboard-up">0</div>
+                                <div class="score1-leaderboard-down">0</div>
+                                <div class="score2-leaderboard-down">0</div>
+                            </div>
+                            <div class="widget-leaderboard">
+                                <p class="country-leaderbord pointer-1" style="--img:url('https://upload.wikimedia.org/wikipedia/commons/b/b0/No_flag.svg')">country1</p>
+                                <p class="country-leaderbord pointer-2" style="--img:url('https://upload.wikimedia.org/wikipedia/commons/b/b0/No_flag.svg')">country2</p>
+                                <div class="score1-leaderboard-up">0</div>
+                                <div class="score2-leaderboard-up">0</div>
+                                <div class="score1-leaderboard-down">0</div>
+                                <div class="score2-leaderboard-down">0</div>
+                            </div>
                         </div>
-                        <div class="tit3">
-                            <h2>Półfinał</h2>
+                        <div class="column2-container">
+                            <div class="widget-leaderboard">
+                                <p class="country-leaderbord pointer-1" style="--img:url('https://upload.wikimedia.org/wikipedia/commons/b/b0/No_flag.svg')">country1</p>
+                                <p class="country-leaderbord pointer-2" style="--img:url('https://upload.wikimedia.org/wikipedia/commons/b/b0/No_flag.svg')">country2</p>
+                                <div class="score1-leaderboard-up">0</div>
+                                <div class="score2-leaderboard-up">0</div>
+                                <div class="score1-leaderboard-down">0</div>
+                                <div class="score2-leaderboard-down">0</div>
+                            </div>
+                            <div class="widget-leaderboard">
+                                <p class="country-leaderbord pointer-1" style="--img:url('https://upload.wikimedia.org/wikipedia/commons/b/b0/No_flag.svg')">country1</p>
+                                <p class="country-leaderbord pointer-2" style="--img:url('https://upload.wikimedia.org/wikipedia/commons/b/b0/No_flag.svg')">country2</p>
+                                <div class="score1-leaderboard-up">0</div>
+                                <div class="score2-leaderboard-up">0</div>
+                                <div class="score1-leaderboard-down">0</div>
+                                <div class="score2-leaderboard-down">0</div>
+                            </div>
                         </div>
-                        <div class="tit4">
-                            <h2>Finał</h2>
+                        <div class="column3-container">
+                            <div class="widget-leaderboard">
+                                <p class="country-leaderbord pointer-1" style="--img:url('https://upload.wikimedia.org/wikipedia/commons/b/b0/No_flag.svg')">country1</p>
+                                <p class="country-leaderbord pointer-2" style="--img:url('https://upload.wikimedia.org/wikipedia/commons/b/b0/No_flag.svg')">country2</p>
+                                <div class="score1-leaderboard-up">0</div>
+                                <div class="score2-leaderboard-up">0</div>
+                                <div class="score1-leaderboard-down">0</div>
+                                <div class="score2-leaderboard-down">0</div>
+                            </div>
                         </div>
-                        <!-- -->
-                        <div class="row2">
+                        <!--
+                            .column$-container*3>header.title-row${lorem1}+.widget-leaderboard*4>p.country-leaderbord.pointer-$[style="--img:url('https://upload.wikimedia.org/wikipedia/commons/b/b0/No_flag.svg')"]{country$}*2+.score$-leaderboard-up*2+.score$-leaderboard-down*2
+
+                            <div class="tit2">header.title-row{lorem1}+.column$-container*3>.widget-leaderboard*4>p.country-leaderbord.pointer-$[style="--img:url('https://upload.wikimedia.org/wikipedia/commons/b/b0/No_flag.svg')"]{country$}*2+.score$-leaderboard-up*2+.score$-leaderboard-down*2
+                            <h2></h2>
+                            </div>
+                            <div class="tit3">
+                            <h2></h2>
+                            </div>
+                            <div class="tit4">
+                            <h2></h2>
+                            </div>
+                            <div class="row2">
                             <div class="leaderbord-child column-1">
                                 <p class="country pole1" style="--img:url('https://upload.wikimedia.org/wikipedia/commons/b/b0/No_flag.svg')">Polska1</p>
                                 <p class="country pole2" style="--img:url('https://upload.wikimedia.org/wikipedia/commons/b/b0/No_flag.svg')">Polska2</p>
@@ -82,7 +149,7 @@
                                 <p class="winik">0 0</p>
                             </div>
                         </div>
-                        <!-- -->
+
                         <div class="row3">
                             <div class="leaderbord-child column-1">
                                 <p class="country pole1" style="--img:url('https://upload.wikimedia.org/wikipedia/commons/b/b0/No_flag.svg')">Polska1</p>
@@ -97,7 +164,7 @@
                                 <p class="winik">0 0</p>
                             </div>
                         </div>
-                        <!-- -->
+
                         <div class="row4">
                             <div class="leaderbord-child column-1">
                                 <p class="country pole1" style="--img:url('https://upload.wikimedia.org/wikipedia/commons/b/b0/No_flag.svg')">Polska1</p>
@@ -105,8 +172,9 @@
                                 <p class="winik-robot">0 0</p>
                                 <p class="winik">0 0</p>
                             </div>
-                        </div>
+                        </div>-->
                     </div>
+
                 </article>
             </main>
             <footer><p>jgs762r32478r3b75dr87q36</p></footer>

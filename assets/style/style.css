@@ -1,3 +1,5 @@
+@import url(leaderboard-widget.css);
+
 :root{
     --c1: #F9DFDC;
     --c3: #0A81AB;
@@ -180,21 +182,6 @@ a > h1:hover{
 
 
 
-.leaderbord-child{
-    width: 200px;
-    height: 66px;
-    border-radius: 5px;
-    background-color: var(--c5);
-    display: grid; 
-    grid-template-columns: 1fr 1fr 1fr; 
-    grid-template-rows: 1fr 1fr; 
-    gap: 0px 0px; 
-    grid-template-areas: 
-    "c1 wr w"
-    "c2 wr w"; 
-    padding: 10px;
-}
-
 .winik{
     writing-mode: vertical-rl;
     text-orientation: upright;
@@ -210,20 +197,6 @@ a > h1:hover{
     margin-left: 25px;
 }
 
-.pole1::before,
-.pole2::before{
-    content: "";
-    position: absolute;
-    top: calc(1em - 13px);
-    left: -25px;
-    background-image: var(--img);
-    background-repeat: no-repeat;
-    background-position: center;
-    border-radius: 5px;
-    width: 20px;
-    height: 1em;
-    display: block;
-}
 
 .pole2{margin-top: 10px;}
 
@@ -232,29 +205,6 @@ a > h1:hover{
 
 .winik-robot{grid-area: wr;}
 .winik{grid-area: w;}
-
-.leaderboard {
-    display: grid; 
-    grid-auto-columns: 1fr; 
-    grid-template-columns: 1fr 1fr 1fr; 
-    grid-template-rows: .1fr 1fr; 
-    gap: 0px 0px; 
-    grid-template-areas: 
-    " tit2 tit3 tit4"
-    " row2 row3 row4"
-    ; 
-}
-
-.tit2,.tit3,.tit4{
-    display: flex;
-    justify-content: center;
-    align-items: center;
-}
-
-.tit2 > h2,.tit3 > h2,.tit4 > h2{
-    font-size: 1rem;
-    color: var(--c1);
-}
 
 .tit1{ grid-area: tit1;}
 .tit2{ grid-area: tit2;}
@@ -308,7 +258,6 @@ a > h1:hover{
         transform:translateY(120px);
         text-align: center;
     }
-    .leaderboard-content{display: none;}
 }
 
 /*!--------------------------------------*/
