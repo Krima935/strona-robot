@@ -1,4 +1,5 @@
 @import url(leaderboard-widget.css);
+@import url(media-query.css);
 
 :root{
     --c1: #F9DFDC;
@@ -171,59 +172,21 @@ a > h1:hover{
     border: none;
 }
 
-.leaderboard{
-    border-radius: 20px;
-    margin: 100px 60px 100px 60px;
-    background: var(--c4);
-    width: calc(100vw - 140px);
-    height: calc(1000px - 6px);
-    padding: 20px;
-}
+/*!--------------------------------------*/
 
-
-
-.winik{
-    writing-mode: vertical-rl;
-    text-orientation: upright;
-    cursor: default;
-}
-.winik-robot{
-    writing-mode: vertical-rl;
-    text-orientation: upright;
-    cursor: default;
-}
-
-.country{
-    margin-left: 25px;
-}
-
-
-.pole2{margin-top: 10px;}
-
-.pole1{grid-area: c1;position: relative;}
-.pole2{grid-area: c2;position: relative;}
-
-.winik-robot{grid-area: wr;}
-.winik{grid-area: w;}
-
-.tit1{ grid-area: tit1;}
-.tit2{ grid-area: tit2;}
-.tit3{ grid-area: tit3;}
-.tit4{ grid-area: tit4;}
-
-.row2,.row3,.row4{
+footer{
+    width: 100%;
+    height: 60px;
+    background: var(--c5);
+    border-top: 3px solid var(--c3_1);
     display: flex;
-    flex-direction: column;
-    flex-wrap: nowrap;
-    justify-content: space-around;
     align-items: center;
-    align-content: center;
+    justify-content: center;
 }
 
-.row2 { grid-area: row2; }
-.row3 { grid-area: row3; }
-.row4 { grid-area: row4; }
+footer > p{margin-left: 30px;}
 
+/*!-------------------------------------*/
 @media only screen and (max-width: 768px) {
     .video              {border-radius: 0px;}
     .video > iframe     {border-radius: 0px;}
@@ -258,18 +221,10 @@ a > h1:hover{
         transform:translateY(120px);
         text-align: center;
     }
+    .leaderboard{
+        width: 1200px;
+        height: 950px;
+        border-radius: 0;
+        margin: 100px 0 0 0;
+    }
 }
-
-/*!--------------------------------------*/
-
-footer{
-    width: 100%;
-    height: 60px;
-    background: var(--c5);
-    border-top: 3px solid var(--c3_1);
-    display: flex;
-    align-items: center;
-    justify-content: center;
-}
-
-footer > p{margin-left: 30px;}
