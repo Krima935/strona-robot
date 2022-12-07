@@ -2,6 +2,7 @@
     width: 100vw;
     height: 1050px;
     margin-bottom: 100px;
+    overflow-y: hidden;
     overflow-x: scroll;
     white-space: nowrap;
     scroll-snap-type: x mandatory;
