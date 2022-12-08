@@ -7,7 +7,6 @@
     --c3_1: #0094ef;
     --c4: #393E46;
     --c5: #222831;
-    --screen-width-mobile: 1000px;
 }
 
 
@@ -67,10 +66,13 @@ nav{
     grid-template-columns: 1.7fr 0.3fr;
     grid-template-areas:
     "logo text";
+    align-items: center;
+    justify-items: center;
 }
 
 .logo{
     grid-area: logo;
+    justify-self: start;
 }
 
 .logo-img{
@@ -87,16 +89,16 @@ nav{
 }
 
 .tekst{
+    justify-self: end;
     grid-area: text;
-    text-align: right;
     width: 31rem;
 }
 
 a > h1{
+    display: inline-block;
     transition: color 100ms ease-in-out;
     color: var(--c3);
     font-size: 1.8rem;
-    margin: 5px 25px 0 0;
 }
 
 a > h1:hover{
@@ -105,8 +107,9 @@ a > h1:hover{
 }
 
 .tekst > h2{
+    margin-left: 140px;
+    display: inline-block;
     font-size: 20px;
-    margin: 0 25px 5px 0;
 }
 
 /*!--------------------------------------*/
@@ -226,5 +229,20 @@ footer > p{margin-left: 30px;}
         height: 950px;
         border-radius: 0;
         margin: 100px 0 0 0;
+    }
+    a > h1{
+        font-size: 1.1rem
+    }
+    .tekst > h2{
+        margin-left: 0 !important;
+        font-size: 16px;
+    }
+    .tekst{
+        grid-area: text;
+        text-align: right;
+        width: 80vw;
+    }
+    nav{
+        grid-template-columns: .1fr 1fr;
     }
 }
