@@ -11,7 +11,7 @@
 .leaderboard{
     border-radius: 20px;
     margin: 100px 100px 100px 100px;
-    background: var(--c4);
+    background: var(--color-pallete-main-second);
     width: calc(100vw - 200px);
     height: 950px;
 
@@ -60,8 +60,8 @@
 .widget-leaderboard{
     width: 220px;
     height: 66px;
-    border-radius: 5px;
-    background-color: var(--c5);
+    border-radius: 5px 0 5px 5px;
+    background-color: var(--color-pallete-main-first);
     display: grid; 
     grid-template-columns: 1fr .5fr .5fr; 
     grid-template-rows: 1fr 1fr; 
@@ -79,30 +79,34 @@
 .score1-leaderboard-up::before  {
     content: "ROB";
     position: absolute;  
-    width: calc( 9.10001px * 6 );
+    width: calc( 9.2px * 6 );
     height: 100%;
     border-bottom: #5edb3e 2px solid;
     top: -26px;
-    transform: translateX(calc(-50% + (9.10001px / 2)));
+    transform: translateX(calc(-50% + (9.2px / 2)));
 }
-.score2-leaderboard-up::before{content: "IRL";border-bottom: #e23838 2px solid; border-radius: 0 2px 0 0;}
+.score2-leaderboard-up::before{content: "IRL";border-bottom: #e23838 2px solid;}
 
 .country-leaderbord{
     left: 40px;
     justify-self:  start;
 }
 .country-leaderbord::before{
-    border: var(--c4) 1px solid;
     content: "";
+    box-shadow: inset 1px 1px rgba(255, 255, 255, 0.5);
+    border: var(--color-pallete-main-second) 1px solid;
+
     position: absolute;
     top: calc(50% - .5em - 1px);
-    left: -25px;
-    background-image: var(--img);
-    background-repeat: no-repeat;
-    background-size: cover;
-    background-position: center;
+    left: -30px;
+    
     border-radius: 5px;
     width: 20px;
     height: 1em;
     display: block;
+
+    background-image: var(--img);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
 }
